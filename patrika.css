@@ -1,0 +1,81 @@
+.my-bg-photo {
+    background: url('images/banner1-bg.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+
+  .my-bg-photo * {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .my-bg-photo:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .01;
+  }
+  
+  .my-custom-container {
+    max-width: 800px;
+  }
+  
+  .accordion .btn-link:focus {
+    box-shadow: none;
+  }
+  
+  .my-drawing {
+    transition: all .1s ease-out;
+  }
+  
+  .my-drawing:hover {
+    transform: scale(1.054) rotate(15deg);
+  }
+  #blink_text{	
+    animation-name:blink;
+    width:280px;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:Infinite;
+    }
+  
+  @keyframes blink{
+    0%{color:brown;}
+    50%{color:white;}
+    100%{color:brown;}}
+  
+    #blink1_text{	
+      animation-name:blink;
+      width:280px;
+      animation-duration:2s;
+      animation-timing-function:ease-in;
+      animation-iteration-count:Infinite;
+      }
+    
+    @keyframes blink{
+      0%{color:orange ;}
+      50%{color:white;}
+      100%{color:orange;}}
+    .box{
+        width: 800px;
+        height:700px;
+        border: 5px solid green;
+        padding:10px;
+        margin:10px
+        
+    }
+    @media screen and (max-width: 480px) {        
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 3px solid green;
+            padding:5px;
+            margin:5px            
+        }    
+      }

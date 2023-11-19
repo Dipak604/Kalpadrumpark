@@ -6,10 +6,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
     <link rel="stylesheet" href="custom.css" />
   </head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
   <body>
     <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
       <h1 class="display-4"><marquee>KALPADRUM PARK -- A MARVELLOUS AREA</marquee></h1>
-      <p class="lead mb-0">A super interesting place in New Dhanmandi-Kota.</p>
+      <div class="mx-auto" style="width: 200px;">
+        <p id = "blink1_text"class="lead mb-0"><b>नई धानमंडी-कोटा में एक बेहद दिलचस्प जगह।</b></p>
+      </div>
+      
     </div>
 
     <div class="container my-custom-container pt-3">
@@ -24,25 +32,55 @@
           <li class="nav-item">
             <a class="nav-link" href="photographs.html">Photographs</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="video.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="patrika.html" role="button">कल्पद्रुम पत्रिका</a>
+          </li>
         </ul>
       </nav>
+    </div>
+    <style>
+      mark { 
+        background-color: orange;
+        color: black;
+      }
+      </style>
 
       <div class="row">
         <div class="col-md-7">
-          <h1>Hey, welcome!</h1>
-          <p class="lead"><b>This is a superinteresting park where people gather everyday for Morning walk, Exercise,Yoga, Play & Gossip</b></p>
-          <p> Here located the great Khao-Pio club for Fun,Celebrations, Shram Dan for Park cleaning and lot more </p>
+          <h2 style="color:green"> कल्पद्रुम पार्क में आप लोग स्वागत हैं !</h2>
+          <p class="lead"><b>यह एक बेहद दिलचस्प पार्क है जहां लोग रोजाना सुबह की सैर, व्यायाम, योग, खेल और गपशप के लिए इकट्ठा होते हैं</b></p>
+          <p class="lead"> यहां मनोरंजन, उत्सव, पार्क की सफाई के लिए श्रम दान और बहुत कुछ के लिए शानदार <mark>खाओ-पियो क्लब </mark> स्थित है.... </p>   
+               
           <a href="about.html" class="btn btn-primary btn-lg">Read Our Story</a>
         </div>
-        <div class="col-md-5 text-center pt-5">
-          <img src="images/Park-1.jpeg" class="my-drawing img-fluid" alt="Park photo." />
-        </div>
+        <div class="col-md-5 text-center pt-5">      
+            <div class="cycle-slideshow" >    
+              <img src="images/Park-1.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park12.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park28.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-4.jpg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park9.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-6.JPG" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/1a119e71-db72-4998-8f19-3c609f373f52 - Copy.JPG" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park19.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Dar_devi.jpg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park21.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-34.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-35.jpeg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-41.jpg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-39.jpg" class="my-drawing img-fluid" alt="Park photo">
+              <img src="images/Park-40.jpg" class="my-drawing img-fluid" alt="Park photo">
+
+
+            </div>
       </div>
-    </div>
 
     <footer class="border-top mt-5 py-4 text-center text-muted small">
       <p> <b> <marquee>Visit the site regularly to see new updates</marquee></b></p>
-      <p>&copy; 2023 My Site &nbsp &nbsp <img src="images/Myself.jpg" ></p>
+      <p>&copy; 2023 Kalpadrum Park &nbsp &nbsp <img src="images/Myself.jpg" ></p>
     </footer>
 
     <!-- JavaScript and dependencies -->

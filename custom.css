@@ -31,9 +31,34 @@
 }
 
 .my-drawing {
-  transition: all .33s ease-out;
+  transition: all .1s ease-out;
 }
 
 .my-drawing:hover {
   transform: scale(1.054) rotate(15deg);
 }
+#blink_text{	
+  animation-name:blink;
+  width:280px;
+  animation-duration:1s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+  }
+
+@keyframes blink{
+  0%{color:brown;}
+  50%{color:white;}
+  100%{color:brown;}}
+
+  #blink1_text{	
+    animation-name:blink;
+    width:280px;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:Infinite;
+    }
+  
+  @keyframes blink{
+    0%{color:orange ;}
+    50%{color:white;}
+    100%{color:orange;}}
